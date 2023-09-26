@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src --ext .tsx,.ts",
-    "stylelint": "stylelint --ignore-path .gitignore './src/**/*.{jsx,tsx,css,scss}'",
+    "stylelint": "stylelint --ignore-path .gitignore --ignore-path .stylelintignore './src/**/*.{css,scss}'",
     "fix": "pnpm lint --fix && pnpm stylelint --fix && pnpm format",
     "typecheck": "tsc",
     "prettier": "prettier --config .prettierrc.json './**/*.{js,jsx,ts,tsx,json,md}'",
@@ -20,15 +20,18 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/server": "^11.11.0",
+    "@radix-ui/react-icons": "^1.3.0",
     "@tabler/icons-react": "^2.35.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
     "jotai": "^2.4.2",
     "next": "^13.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ress": "^5.0.2",
     "sharp": "^0.32.6",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss-animate": "^1.0.7",
     "uuid": "^9.0.1"
   },
   "devDependencies": {

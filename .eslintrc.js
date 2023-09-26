@@ -27,6 +27,7 @@ module.exports = {
   rules: {
     'require-jsdoc': ['off'],
     'valid-jsdoc': ['off'],
+    'object-curly-spacing': 'off',
     'import/order': [
       'error',
       {

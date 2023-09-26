@@ -23,7 +23,7 @@ const buildCommand = (command) => async (filenames) => {
 };
 
 module.exports = {
-  '*.{js,jsx,ts,tsx}': [buildEslintCommand, buildCommand('pnpm stylelint')],
-  '*.{js,jsx,ts,tsx,css,scss}': buildCommand('pnpm stylelint'),
+  '*.{js,jsx,ts,tsx}': buildEslintCommand,
+  '*.{css,scss}': buildCommand('pnpm stylelint'),
   '*.{css,scss,js,jsx,ts,tsx,json,md}': buildCommand('pnpm format'),
 };

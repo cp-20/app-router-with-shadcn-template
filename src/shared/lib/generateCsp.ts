@@ -22,24 +22,24 @@ export const generateCsp = (): csp => {
    */
   const csp = `
   script-src 'unsafe-eval' 'unsafe-inline' https: http: ${
-    isVercelPreview
-      ? `https://vercel.live/ https://vercel.com`
-      : `'nonce-${nonce}' 'strict-dynamic'`
-  };
+    isVercelPreview ?
+      `https://vercel.live/ https://vercel.com` :
+      `'nonce-${nonce}' 'strict-dynamic'`
+};
   object-src 'none';
   base-uri 'none';
   ${
-    isVercelPreview
-      ? `connect-src 'self' https://vercel.live/ https://vercel.com https://*.pusher.com/ wss://*.pusher.com/;
+    isVercelPreview ?
+      `connect-src 'self' https://vercel.live/ https://vercel.com https://*.pusher.com/ wss://*.pusher.com/;
       img-src 'self' https://vercel.live/ https://*.vercel.com https://vercel.com https://*.pusher.com/ data: blob:;
       font-src 'self' https://*.vercel.com https://*.gstatic.com;
       frame-src 'self' https://vercel.live/ https://vercel.com;
-      `
-      : ''
-  }
+      ` :
+      ''
+}
   `
-    .replace(/\s{2,}/g, ' ')
-    .trim();
+      .replace(/\s{2,}/g, ' ')
+      .trim();
 
   return {
     csp,
