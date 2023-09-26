@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     template: '%s - ダイススペック',
     default: 'ダイススペック',
   },
+  metadataBase: new URL(appBaseUrl),
   openGraph: {
     type: 'website',
     locale: 'ja',
