@@ -36,9 +36,6 @@ jobs:
           cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
-
-      - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Restore next build
