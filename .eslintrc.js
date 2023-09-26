@@ -17,7 +17,6 @@ module.exports = {
     'next/core-web-vitals',
     'google',
     'prettier',
-    'plugin:storybook/recommended',
   ],
   plugins: [
     'react-hooks',

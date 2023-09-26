@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-with-mantine-template",
+  "name": "app-router-with-shadcn-ui-template",
   "version": "0.0.0",
   "private": true,
   "author": "cp20",
@@ -7,10 +7,8 @@
   "scripts": {
     "dev": "run-p dev:*",
     "dev:next": "next dev --turbo",
-    "dev:path": "pnpm pathpida -w",
-    "build": "pnpm pathpida && next build",
+    "build": "next build",
     "start": "next start",
-    "pathpida": "pathpida -p .gitignore -o ./src/shared/lib -s",
     "lint": "eslint src --ext .tsx,.ts",
     "stylelint": "stylelint --ignore-path .gitignore './src/**/*.{jsx,tsx,css,scss}'",
     "fix": "pnpm lint --fix && pnpm stylelint --fix && pnpm format",
@@ -19,9 +17,7 @@
     "format": "pnpm prettier --write",
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm",
-    "test": "vitest",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "test": "vitest"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -40,13 +36,6 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.0.18",
-    "@storybook/addon-interactions": "^7.0.18",
-    "@storybook/addon-links": "^7.0.18",
-    "@storybook/blocks": "^7.0.18",
-    "@storybook/nextjs": "^7.0.18",
-    "@storybook/react": "^7.0.18",
-    "@storybook/testing-library": "0.0.14-next.2",
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
@@ -65,16 +54,13 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-storybook": "^0.6.12",
     "happy-dom": "^8.9.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "npm-run-all": "^4.1.5",
-    "pathpida": "^0.20.1",
     "postcss": "^8.4.23",
     "postcss-syntax": "^0.36.2",
     "prettier": "^2.8.8",
-    "storybook": "^7.0.18",
     "stylelint": "^14.16.1",
     "stylelint-config-idiomatic-order": "^9.0.0",
     "stylelint-config-prettier": "^9.0.5",
