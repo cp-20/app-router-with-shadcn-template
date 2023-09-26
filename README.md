@@ -1,6 +1,6 @@
-# Next.js with Mantine UI Template
+# Next.js App Router with shadcn/ui Template
 
-Next.js を Mantine UI と一緒に色々セットアップしてあるオレオレテンプレートリポジトリです。ご利用は計画的に。
+shadcn/ui を使った Next.js App Router 用のテンプレートリポジトリです。
 
 ## 技術スタック
 
