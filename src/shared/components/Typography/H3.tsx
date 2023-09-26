@@ -7,25 +7,25 @@ import type {
 
 import { twMerge } from 'tailwind-merge';
 
-const unrefH1: ForwardRefRenderFunction<
+const unrefH3: ForwardRefRenderFunction<
   HTMLHeadingElement,
-  ComponentPropsWithoutRef<'h1'>
+  ComponentPropsWithoutRef<'h3'>
 > = ({ children, className, ...props }, ref) => {
   return (
-    <h1
+    <h3
       className={twMerge(
-        'scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl',
+        'scroll-m-20 text-2xl font-semibold tracking-tight',
         className,
       )}
       ref={ref}
       {...props}
     >
       {children}
-    </h1>
+    </h3>
   );
 };
 
-export const H1: FC<ComponentPropsWithoutRef<'h1'>> = forwardRef<
+export const H3: FC<ComponentPropsWithoutRef<'h3'>> = forwardRef<
   HTMLHeadingElement,
-  ComponentPropsWithoutRef<'h1'>
->(unrefH1);
+  ComponentPropsWithoutRef<'h3'>
+>(unrefH3);
