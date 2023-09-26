@@ -1,7 +1,7 @@
 import 'ress';
-import '@/shared/styles/global.css';
+import '@/app/globals.css';
 import type { Metadata } from 'next';
-import type { AppProps } from 'next/app';
+import type { FC, ReactNode } from 'react';
 import { GoogleTagManager } from '@/shared/components/GoogleTagManager';
 
 export const appBaseUrl = 'https://dicespec.vercel.app';
@@ -40,18 +40,18 @@ export const metadata: Metadata = {
   },
 };
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+const RootLayout: FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <>
       <html lang="ja">
         <body>
           <GoogleTagManager />
 
-          <Component {...pageProps} />
+          {children}
         </body>
       </html>
     </>
   );
 };
 
-export default MyApp;
+export default RootLayout;
