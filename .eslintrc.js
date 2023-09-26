@@ -16,6 +16,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'next/core-web-vitals',
     'google',
+    'prettier',
   ],
   plugins: [
     'react-hooks',
@@ -27,7 +28,6 @@ module.exports = {
   rules: {
     'require-jsdoc': ['off'],
     'valid-jsdoc': ['off'],
-    'object-curly-spacing': 'off',
     'import/order': [
       'error',
       {

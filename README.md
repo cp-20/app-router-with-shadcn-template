@@ -5,10 +5,10 @@ Next.js を Mantine UI と一緒に色々セットアップしてあるオレオ
 ## 技術スタック
 
 - [Next.js v13](https://nextjs.org/)
-- [Mantine UI v6](https://ui.mantine.dev/)
+- [shadcn/ui](https://ui.shadcn.com/)
 - [Tabler Icons](https://tabler-icons.io/)
 - [Jotai](https://jotai.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
+- [Tailwind CSS v3](https://tailwindcss.com/)
 
 - ESlint
 - Prettier
