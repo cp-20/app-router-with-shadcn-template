@@ -16,7 +16,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'next/core-web-vitals',
     'google',
-    'prettier',
   ],
   plugins: [
     'react-hooks',
