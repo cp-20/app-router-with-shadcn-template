@@ -1,4 +1,4 @@
-name: Testing build Next.js App
+name: Testing with Vitest
 
 on:
   pull_request:
@@ -26,4 +26,4 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Testing build Next.js App
-        run: pnpm build
+        run: pnpm test

@@ -68,6 +68,7 @@
     "vite": "^4.4.9",
     "vitest": "^0.34.5"
   },
+  "packageManager": "pnpm@8.7.6",
   "lint-staged": {
     "*.{ts,tsx}": "pnpm lint",
     "*.{css,scss}": "pnpm stylelint",
