@@ -11,7 +11,7 @@ export const metadata: Metadata = metadataGenerator({
 
 const LandingPage = () => {
   return (
-    <div className="w-screen min-h-screen flex flex-col justify-center items-center">
+    <div className="flex min-h-screen w-screen flex-col items-center justify-center">
       <div>
         <H1>Next.js App Router with shadcn/ui Template</H1>
         <Text>
